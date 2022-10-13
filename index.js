@@ -2,8 +2,10 @@ const express = require("express")
 const app = express()
 const PORT = process.env.PORT || 5000;
 const nodemailer = require("nodemailer")
+const bodyParser = require('body-parser')
 
 app.use(express.json())
+app.use(bodyParser.urlencoded({extended:false}))
 app.get("/",(req,res)=>{
     res.send('hello world')
 })
