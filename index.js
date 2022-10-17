@@ -22,7 +22,7 @@ app.post("/send-email",(req,res)=>{
   let mailOptions = {
     from: 'denniskyn80@gmail.com',
     to: ["danyonje.da.da@gmail.com","eric@cadiff-systems.com"],
-    subject: `The subject goes here`,
+    subject: `Equity Payment Message`,
     html: `<body>${req.body.message}</body>`,
   };
   
