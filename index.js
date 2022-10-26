@@ -15,12 +15,12 @@ app.post("/send-email",(req,res)=>{
     service: 'gmail',
     auth: {
       user: "denniskyn80@gmail.com",
-      pass: "sjtmruvqdsihaset",
+      pass: "ffrunxhllteqlevp",
     },
   });
   
   let mailOptions = {
-    from: 'denniskyn80@gmail.com',
+    from: 'smsalerts2022app@gmail.com',
     to: ["danyonje.da.da@gmail.com","forestviewminimart@gmail.com"],
     subject: `Equity Payment Message`,
     html: `<body>${req.body.message}</body>`,
@@ -31,8 +31,8 @@ app.post("/send-email",(req,res)=>{
       console.log(err)
       res.send("An error occurred")
     } else {
-      console.log(info);
-      res.send({message:"Email sent successfully"})
+      
+      res.send({message:req.body.message})
     }
   });  
 })
