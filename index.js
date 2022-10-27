@@ -21,7 +21,7 @@ app.post("/send-email",(req,res)=>{
   
   let mailOptions = {
     from: 'SMS Alerts 2020',
-    to: ["danyonje.da.da@gmail.com","forestviewminimart@gmail.com"],
+    to: ["forestviewminimart@gmail.com"],
     subject: `${req.body.subject}`,
     html: `<body>${req.body.message}</body>`,
   };
