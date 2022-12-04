@@ -1,0 +1,50 @@
+Arguments: 
+  /home/denis/.nvm/versions/node/v16.18.0/bin/node /usr/share/yarn/bin/yarn.js
+
+PATH: 
+  /home/denis/.nvm/versions/node/v16.18.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.18.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/denis/Desktop/hp/quiet-sands-68669/package.json: Unexpected token } in JSON at position 195
+      at JSON.parse (<anonymous>)
+      at /usr/share/yarn/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/usr/share/yarn/lib/cli.js:310:30)
+      at /usr/share/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "hp-email",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "build": "echo \"Error: no test specified\" && exit 1",
+      "start":"node index.js",
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "express": "^4.18.2",
+      "nodemailer": "^6.8.0"
+    },
+    "engines": {
+      "node": "16.17.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
